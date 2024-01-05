@@ -1,0 +1,129 @@
+*{
+    margin:0;
+    padding:0;
+}
+:root{
+    --font:inter;
+    --box-shadow:#00000040;
+}
+body{
+    background-color:#3B4664;
+}
+#main_div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#display{
+    padding-right:20px;
+    width: 516px;
+    height: 142.73px;
+    margin-top: 14px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px 0px var(--box-shadow);
+    background: #181F32;
+    font-family: var(--font);
+    font-size: 23px;
+    font-weight: 800;
+    color: white;
+    text-align: right;
+}
+#buttons_div{
+    width: 536px;
+    height: 487px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 4px 0px var(--box-shadow);
+    border-radius: 12px;
+    background: #252D44;
+    /* margin-bottom: 194px; */
+}
+#divs{
+    margin:48px 35px;
+    display:grid;
+    gap:22px;
+}
+#first_div,#second_div,#third_div,#fourth_div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:22px;
+}
+input{
+    width: 100px;
+    height: 60px;
+    border-radius: 12px;
+    text-align: center;
+    font-family: var(--font);
+    font-size: 23px;
+    font-weight: 800;
+    background: #EAE3DB;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#special_buttons{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:23px;
+}
+.special{
+    width: 222.44px;
+    height: 60px;
+    border-radius: 11.52px;
+}
+.color{
+    background: #647299;
+    border: none;
+    outline: none;
+
+}
+#equal{
+    background: #D13F30;
+    border: none;
+    outline: none;
+}
+@media only screen and (max-width: 700px) {
+    #display{
+        width: 446px;
+        font-size: 20px;
+    }
+    #buttons_div{
+        width: 466px;
+    }
+    #divs{
+        gap:18px;
+    }
+    input{
+        width: 80px;
+        height: 60px;
+        font-size: 20px;
+    }
+    #special_buttons{
+        gap:20px;
+    }
+    .special{
+        width: 200.44px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    #display{
+        width: 346px;
+        font-size: 20px;
+    }
+    #buttons_div{
+        width: 366px;
+    }
+    #divs{
+        gap:15px;
+    }
+    input{
+        width: 60px;
+        font-size: 18px;
+    }
+    #special_buttons{
+        gap:18px;
+    }
+    .special{
+        width: 150.44px;
+    }
+  }
+  
