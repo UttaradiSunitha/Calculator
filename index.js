@@ -17,7 +17,7 @@ const reset=document.getElementById('reset');
 const equal=document.getElementById('equal');
 const del=document.getElementById('delete');
 const display=document.getElementById('display');
-
+let r;
 
 
 function clikedReset(){
@@ -91,6 +91,13 @@ point.addEventListener('click',addPoint);
 
 function operation(){
     display.value=(display.value).replaceAll('x','*');
-    display.value=eval(display.value).toFixed(3);
+    r=eval(display.value);
+    if(Number.isInteger(r)){
+        display.value=r
+    }
+    else{
+        display.value=r.toFixed(3)
+    }
+
 }
 equal.addEventListener('click',operation);
